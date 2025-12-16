@@ -1,22 +1,76 @@
+/*tema claro cottagecore softgirl*/
 body {
-padding-top: 70px;
-transition: background 0.3s, color 0.3s;
+  padding-top: 70px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #D4A0D5; 
+  color: #212529;
 }
 
-
-.hero {
-background: #343a40;
-color: white;
-padding: 60px 20px;
+body[data-theme="dark"] {
+  background-color: #19032c;
+  color: #f1f1f1;
 }
 
-
-.section {
-padding: 60px 20px;
+.border {
+  border-color: var(--border-color) !important;
+}
+.options {
+  display: flex;
+  gap: 1rem;
+}
+.option {
+  flex: 1;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: flex 0.4s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.option.active {
+  flex: 3;
+}
+.option .info {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.option.active .info {
+  opacity: 1;
+}
+#themeToggle {
+  z-index: 1000;
+}
+/*formulario de contacto que nadie usa */
+#contactForm .form-control {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+#contactForm .form-control:focus {
+  box-shadow: none;
+  border-color: #c77dff;
 }
 
+/*tema dark b!tch*/
 
-.dark-theme {
-background: #121212;
-color: #f1f1f1;
+body[data-theme="dark"] .bg-light {
+  background-color: #3a1c52 !important;
+}
+
+body[data-theme="dark"] .border {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body[data-theme="dark"] .shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6) !important;
+}
+
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] p,
+body[data-theme="dark"] span {
+  color: #f1f1f1;
 }
