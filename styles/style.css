@@ -3,7 +3,10 @@ body {
   padding-top: 70px;
   transition: background-color 0.3s, color 0.3s;
   background-color: #D4A0D5; 
-  color: #212529;
+  color: #02111f;
+}
+.pink{
+  background-color:#edd4ec; 
 }
 
 body[data-theme="dark"] {
@@ -55,7 +58,7 @@ body[data-theme="dark"] {
 
 /*tema dark b!tch*/
 
-body[data-theme="dark"] .bg-light {
+body[data-theme="dark"] .pink {
   background-color: #3a1c52 !important;
 }
 
