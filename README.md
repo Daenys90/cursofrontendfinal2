@@ -1,1 +1,6 @@
-se borró lo que había puesto aquí, había quedado bonito
+(En construcción)
+Portafolio Denisse Ojeda
+Diseño Frontend / UX UI / Análisis de datos trainee
+
+
+
